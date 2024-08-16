@@ -1,5 +1,4 @@
 # Tercera preentrega Python 57825 -  Pedro Sanchez
----
 
 ## Entorno virtual
 Activar el entorno virtual con el comando:
