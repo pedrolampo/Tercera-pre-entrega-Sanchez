@@ -1,0 +1,34 @@
+{% extends "BaseApp/index.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<div class="py-5 my-5 h-75">
+
+{% if guitars %}
+<ul>
+{% for guitar in guitars %}
+  <li>Nombre: {{guitar.name}} - Precio: {{guitar.price}}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if basses %}
+<ul>
+{% for bass in basses %}
+  <li>Nombre: {{bass.name}} - Precio: {{bass.price}}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if clients %}
+<ul>
+{% for client in clients %}
+  <li>Nombre: {{client.name}} {{client.surname}} - Email: {{client.email}}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+</div>
+
+{% endblock %}
